@@ -1,0 +1,54 @@
+/* start cssfile for indexfile.html */
+.myname{
+    color: rgb(44, 27, 222);
+}
+.paragraph{
+    color: hsl(23,20%,36%);
+}
+    
+.frontend{
+    color: rgb(47, 53, 114);
+
+    background-color: rgb(185, 119, 119);
+}
+.backend{
+    color: #12ab6e;
+}
+
+.maindiv{
+    /* background-color: chartreuse; */
+    /* background-image: url("./images/image.jpg"); */
+    background-image: url("https://i.ebayimg.com/images/g/0w0AAOSw-1xZeQZP/s-l1200.jpg");
+    /* background-repeat: no-repeat; */
+    /* width: 100%;
+    height: 500px; */
+    object-fit: fill;
+    /* background-attachment: scroll; */
+    background-position: center;
+    
+}
+
+.maindiv2{
+    border: 2px ;
+    border-style:dashed;
+    border-color: green;
+}
+.maindiv4{
+ border: 2px solid red ;
+}
+.maindiv5{
+   border: 2px;
+   border-style: solid dotted dotted dashed;
+   border-color: rgb(214, 30, 131) blue green orangered;
+   }
+  .maindiv6{
+    background-color: bisque;
+    border-top: 1px solid red;
+    border-left: 4px solid blue;
+  }
+  .maindiv7{
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+    border-radius: 25% 20% 30% 70%;
+  }

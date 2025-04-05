@@ -1,0 +1,42 @@
+/* we can accesss external style by id , class , tags(element)
+id=#idname
+class===> .classname
+by tagname=== h,p,img,li.ul.form,div,section, */
+/* *{
+    background-color: darkcyan;
+} */
+
+#paragaph{
+    color: blue;
+}
+
+#header{
+    background-color: #fff;
+}
+
+.list{
+    background-color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+
+section div p span {
+    color: brown;
+}
+
+
+#footer p {
+ color: black;
+}
+
+footer p + h1{
+    color: red;
+}
+
+section,article {
+    border: 1px solid brown;
+
+}
+
+

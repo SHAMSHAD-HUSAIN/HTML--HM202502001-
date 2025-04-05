@@ -5,22 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width" />
     <meta name="description" content="html practice Assignment" />
+    <link rel="stylesheet" href="./myclass.css">
+    <style>
+
+      section {
+        background-color: darkgreen;
+      }
+      header {
+        background-color: blue;
+      }
+    </style>
+
   </head>
   <body>
     <section>
-      <header>
-        <h1>Welcome to HTML</h1>
+      <header id="header" style="background-color: red;">
+        <h1 >Welcome to HTML</h1>
       </header>
 
-      <p>
+      <p id="paragaph">
         HTML stands for hypertext markup lang..<br />it is used for create
         structure of webpages...
       </p>
 
       <ul>
-        <li>HTML</li>
-        <li>css</li>
-        <li>JavaScript</li>
+        <li class="list">HTML</li>
+        <li >css</li>
+        <li class="list">JavaScript</li>
       </ul>
       <img src="images/image.jpg" alt="Sample Image" width="240px" />
       <a href="https://www.google.com">Visit google!</a>
@@ -111,7 +122,7 @@
 
     <section>
       <div>
-        <p>
+        <p> 
           <span>lorem ipsum</span> dolor sit amet consectetur adipisicing elit.
           Rerum repudiandae voluptate commodi aspernatur qui maiores neque vitae
           illum nihil culpa dolorum voluptatem, odit earum amet dicta? Incidunt
@@ -227,9 +238,10 @@
 </section>
    <p> <abbr title="World health Organization"> WHO</abbr> is global health agency.</p>
    <mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, esse.</mark>
-    <footer>
-      <p>&copy;2025 Hitech Mentor . All rights reserved. it has been changed</p>
+    <footer id="footer">
+      <!-- <p>&copy;2025 Hitech Mentor . All rights reserved. it has been changed</p> -->
       <p>hello!</p>
+      <h1>my heading!!!!</h1>
     </footer>
   </body>
 </html>
