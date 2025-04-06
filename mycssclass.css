@@ -45,6 +45,7 @@
     background-color: bisque;
     border-top: 1px solid red;
     border-left: 4px solid blue;
+    border-bottom: 5px solid red;
   }
   .maindiv7{
     width: 50px;
@@ -52,3 +53,49 @@
     border: 2px solid red;
     border-radius: 25% 20% 30% 70%;
   }
+
+
+  .padd-marg{
+    /* width: 100px ; */
+    /* height: 40px; */
+    border: 10px solid black;
+    background-color: #58b8de;
+    /* padding: 200px; */
+    /* padding: 50px 30px; */
+    /* padding: 10px 350px 10px; */
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    padding-top: 100px;
+    /* margin: 50px; */
+    /* margin: 40px 20px; */
+    /* margin: 50px 10px 100px ; */
+    /* margin-top: 200px; */
+    /* margin-left: 50px; */
+    /* margin-bottom: 500px; */
+
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    /* line-height: 50px; */
+    /* word-spacing: 20px; */
+    /* letter-spacing: 2px; */
+    /* white-space: normal; */
+    /* white-space: nowrap; */
+    /* text-indent: 400px; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .consect{
+    text-decoration: line-through;
+    text-decoration: overline;
+    /* white-space: 400px; */
+    /* text-shadow: horizontal  vertical  blur color ; */
+    text-shadow: 2px  4px  0px rgb(153, 255, 0);
+
+  }
+ 
