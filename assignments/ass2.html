@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Web Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width" />
+    <meta name="description" content="html practice Assignment" />
+    <link rel="stylesheet" href="./myclass.css">
+    <style>
+
+      section {
+        background-color: darkgreen;
+      }
+      header {
+        background-color: blue;
+      }
+    </style>
+
+  </head>
+  <body>
+    <section>
+      <header id="header" style="background-color: red;">
+        <h1 >Welcome to HTML</h1>
+      </header>
+
+      <p id="paragaph">
+        HTML stands for hypertext markup lang..<br />it is used for create
+        structure of webpages...
+      </p>
+
+      <ul>
+        <li class="list">HTML</li>
+        <li >css</li>
+        <li class="list">JavaScript</li>
+      </ul>
+      <img src="images/image.jpg" alt="Sample Image" width="240px" />
+      <a href="https://www.google.com">Visit google!</a>
+
+      <p>
+        <strong>Lorem </strong>ipsum <em>dolor sit amet</em>, consectetur
+        adipisicing elit. Eligendi, facere voluptatum? In magni voluptatem
+        ratione ea quod cumque similique rerum!
+      </p>
+    </section>
+
+    <section>
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td><a href="./index.html">shamshad</a></td>
+          <td>28</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td colspan="2">col1</td>
+
+          <td>c3</td>
+        </tr>
+      </table>
+    </section>
+    <!-- form started here  -->
+    <section>
+      <form>
+        <fieldset>
+          <legend>Personal Information!</legend>
+          <label for="Name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            required
+            value="shamshad"
+            placeholder="Enter your name..."
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" required /><br />
+          <label for="pass">Password:</label>
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="Enter your password"
+          /><br />
+
+          <label for="country"> Country:</label>
+          <select name="country">
+            <option>India</option>
+            <option>USA</option>
+            <option>canada</option>
+            <option>Dubai</option>
+            <option>UAE</option></select
+          ><br />
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="MAle" />Male
+          <input type="radio" name="gender" value="Female" />Female
+          <br />
+          <label>Select hobbies:</label>
+          <input type="checkbox" />Reading <input type="checkbox" />Traveling
+          <input type="checkbox" />Gaming <input type="checkbox" />Coding
+          <br />
+          <label for="language">Fav programming language:</label>
+          <input list="languages" name="language" />
+          <datalist id="languages">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScipt"></option>
+            <option value="Python"></option></datalist
+          ><br />
+          <label>Comments:</label>
+          <textarea name="textarea"></textarea>
+          <br />
+          <label for="dob">select Date:</label>
+          <input name="dob" type="date" />
+          <br /><input type="submit" />
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <div>
+        <p> 
+          <span>lorem ipsum</span> dolor sit amet consectetur adipisicing elit.
+          Rerum repudiandae voluptate commodi aspernatur qui maiores neque vitae
+          illum nihil culpa dolorum voluptatem, odit earum amet dicta? Incidunt
+          eum dolorem possimus vitae officiis eos, cupiditate, quaerat alias
+          ipsum laborum omnis perferendis quod facere maiores esse labore
+          nesciunt sunt? Earum, esse dolor!
+        </p>
+      </div>
+    </section>
+    <!-- navigation started from here  -->
+    <section>
+      <nav>
+        <a href="./index.html">home</a>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.facebook.com">facebook</a>
+        <a href="#jhhj">blog</a>
+      </nav>
+    </section>
+    <section>
+      <article>
+        <h2>My blog</h2>
+        <p>this is an exmaple blog post using article tag</p>
+      </article>
+    </section>
+
+    <section>
+      <video controls width="450px">
+        <source
+          src="./video/John Wick Chapter - Chapter 2 (2017) 1080p {60FPS} 10bit BluRay x265 HEVC [Org Z5 Hindi DD 2.0Ch 384Kbps + English DD 5.1] ESubs ~ DD2D3 [Strange].mkv"
+          type="video/mp4"
+        />
+        your browser does not support video..
+      </video>
+
+      <audio controls>
+        <source src="./video/bollywood-song-313044.mp3" type="audio/mpeg" />
+        your browser does not support ..
+      </audio>
+
+      <!-- <iframe  fullscreen frameborder="1" width="560" height="312" src="https://youtu.be/IVkFV02pjvc?si=C3S43PdOk4nuhL89" ></iframe> -->
+      <iframe
+        width="321"
+        height="315"
+        src="https://www.youtube.com/embed/IVkFV02pjvc?si=C3S43PdOk4nuhL89"
+        title="YouTube video player"
+        frameborder="2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <hr />
+
+    <section>
+      <h2>Image Gallery</h2>
+      <div>
+        <img
+          width="200px"
+          src="https://cdn.pixabay.com/photo/2021/02/23/10/19/bird-6043004_1280.jpg"
+          alt="image1"
+        />
+        <img
+          width="200px"
+          src="https://cdn.pixabay.com/photo/2021/09/06/20/12/cat-6602447_1280.jpg"
+          alt="image2"
+        />
+        <img
+          width="200px"
+          src="https://cdn.pixabay.com/photo/2022/10/11/16/43/french-bulldog-7514725_1280.jpg"
+          alt="image3"
+        />
+        <img
+          width="200px"
+          src="https://cdn.pixabay.com/photo/2022/09/30/13/55/torii-7489492_1280.jpg"
+          alt="image4"
+        />
+      </div>
+    </section>
+    <details>
+      <summary>click to expand</summary>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+        necessitatibus voluptatem facere obcaecati cupiditate sapiente, ipsa
+        vitae explicabo adipisci nihil?
+      </p>
+    </details>
+<section>
+    <form action="submit" method="post">
+        <fieldset>
+          <legend>Contact form!</legend>
+          <label for="Name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            required
+            value="shamshad"
+            placeholder="Enter your name..."
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" required /><br />
+          <label for="pass">Password:</label>
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="Enter your password"
+          /><br />
+          <br />
+          <input type="submit" />
+        </fieldset>
+      </form>
+</section>
+   <p> <abbr title="World health Organization"> WHO</abbr> is global health agency.</p>
+   <mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, esse.</mark>
+    <footer id="footer">
+      <!-- <p>&copy;2025 Hitech Mentor . All rights reserved. it has been changed</p> -->
+      <p>hello!</p>
+      <h1>my heading!!!!</h1..>
+    </footer>
+  </body>
+</html>

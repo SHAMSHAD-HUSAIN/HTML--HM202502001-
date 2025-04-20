@@ -1,0 +1,74 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Main heading */
+  .main-heading {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Flex container */
+  .team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3,200px); */
+  }
+  
+  /* Team card styles */
+  .team-card {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 200px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  /* Special card: scaled up */
+  .special-card {
+    transform: scale(1.05);
+  }
+  
+  /* Image styles with rotation */
+  .team-card img {
+    width: 100%;
+    height: auto;
+    transform: rotate(-2deg);
+    margin-bottom: 15px;
+  }
+  
+  /* Name styles with skew */
+  .name {
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    transform: skewX(-10deg);
+  }
+  
+  /* Role */
+  .role {
+    font-size: 16px;
+    color: #16a085;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 8px 0;
+  }
+  
+  /* Description */
+  .description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
