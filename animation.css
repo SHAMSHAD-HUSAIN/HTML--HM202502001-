@@ -1,0 +1,77 @@
+body{
+    margin: 20px;
+    padding: 10px;
+
+}
+.parent-section{
+    display: flex;
+    column-gap: 20px;
+}
+.main-div{
+    height: 100px;
+    width: 100px;
+    background-color: #ffff28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+}
+.main-div2{
+    height: 100px;
+    width: 100px;
+    background-color: #ffff28;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: rotate(-20deg); */
+    /* transform: scale(2); */
+    /* transform: scaleX(1.5);
+    transform: scaley(.5); */
+    /* transform: scale(.6,2); */
+    /* transform: skew(20deg); */
+    /* transform: skewx(-20deg); */
+    /* transform: skewy(-20deg); */
+    /* transform: translate(200px); */
+    /* transform: translateX(300px); */
+    /* transform: translatey(300px); */
+    /* transform: matrix([scaleX],[skewy],[skewx],[scaley],[translateX],translatey); */
+    /* transform: matrix(1.5,0.2,.03,1,200,200); */
+    /* border-radius: 20px 30px 10px 34px; */
+/* transform: translate(20px,12px) rotate(20deg) scale(1.2) skew(20deg); */
+
+
+
+
+
+/* transition-property: width; */
+/* transition-property:transform ;
+transition-duration: 5000ms; */
+/* ease== in start speed slow, in middle speed is up and speed is down in end >
+ease-in== slow in start , fast in ends>
+ease-in-out==in start speed slow, in middle speed is up and speed is down in end>
+ease-out== fast in start & slow in end>
+linear== maintain constant speed >
+steps== need to step by stepp transition>  
+cubic-bezier== custum path for element> */
+/* transition-timing-function: cubic-bezier(.33,.69,.48,.61); 
+transition-delay: 10000ms ; */
+
+/* short hand  */
+transition: transform 4000ms ease 1000ms,
+           background-color ;
+
+
+
+}
+
+.main-div2:hover{
+
+    /* width: 300px; */
+    background-color: red;
+    /* rotate: 20deg; */
+    /* border-radius: 50%; */
+    /* transform: scale(2); */
+    transform: translateX(400px);
+}
