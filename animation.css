@@ -75,3 +75,47 @@ transition: transform 4000ms ease 1000ms,
     /* transform: scale(2); */
     transform: translateX(400px);
 }
+
+/* @keyframes hitech {
+    from{ background-color: red;}
+    to{ background-color: blue;}
+
+} */
+
+@keyframes hitech {
+    0%{ background-color: red;left:100px}
+    20%{ background-color: blue;right:0px}
+    50%{ background-color: rgb(29, 142, 58);top:100px}
+    71%{background-color: #ffff28; border-radius: 50%;}
+    100%{background-color: rgb(225, 11, 196); bottom: 0px;}
+
+}
+
+.animation-div{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    left: 200px;
+    top: 20px;
+    /* animation-name: hitech; */
+    /* animation-duration: 10000ms; */
+  /* animation-delay: 2s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: normal; */
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate; */
+  /* animation-direction: alternate-reverse; */
+  /* animation-timing-function: ease; */
+  /* animation-timing-function: ease-in; */
+  /* animation-timing-function: ease-out; */
+  /* animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+  /* animation-fill-mode: both; */
+  
+animation: hitech 10s linear 5s infinite alternate;
+}
+
