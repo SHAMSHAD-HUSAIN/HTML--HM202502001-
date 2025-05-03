@@ -1,0 +1,723 @@
+/* General Section Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    margin-left: 40px;
+  }
+  
+  .task {
+    margin-bottom: 50px;
+  }
+  
+  /* Task 1: Display Types */
+  .block-box {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 10px 0;
+  }
+  
+  .inline-box {
+    display: inline;
+    background-color: lightgreen;
+    padding: 5px;
+  }
+  
+  .inline-block-box {
+    display: inline-block;
+    background-color: lightcoral;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  /* Task 2: Hidden Message with display: none; */
+  .hover-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+  }
+  
+  .hidden-message {
+    display: none;
+    color: white;
+    background-color: darkgreen;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .hover-container:hover .hidden-message {
+    display: block;
+  }
+  
+  /* Task 3: Sticky Navbar */
+  .navbar-task3 {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .navbar-task3 a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  .long-content {
+    height: 500px;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* Task 4: Fixed Card */
+  .fixed-card {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Task 5: Tooltip with position: absolute */
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-btn {
+    padding: 10px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tooltip-text {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 05s ease;
+  }
+  
+  .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+  /* ---------- FLEXBOX TASKS ---------- */
+
+/* Task 6: Flex Navigation Bar */
+.flex-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    padding: 15px;
+  }
+  
+  .flex-navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #eeee0a;
+    border: 1px ;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Task 7: Center Login Form Vertically & Horizontally */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #d21111;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-form button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Task 8: Two-Column Layout */
+  .two-column {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .column-left,
+  .column-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #dcdcdc;
+  }
+  
+  /* Task 9: Row of 4 Cards with Wrap */
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .card {
+    background-color: lightseagreen;
+    color: white;
+    padding: 20px;
+    flex: 1 1 calc(25% - 15px);
+    box-sizing: border-box;
+    min-width: 200px;
+  }
+  
+  /* Task 10: One Item Double Size */
+  .flex-double {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .flex-double .item {
+    background-color: tomato;
+    color: white;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .flex-double .big {
+    flex: 2;
+    background-color: darkred;
+  }
+  
+
+  /* ---------- GRID TASKS ---------- */
+
+/* Task 11: 3x3 Image Gallery */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .grid-gallery img {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Task 12: 2-Column Grid Layout */
+  .two-col-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .two-col-grid .left {
+    background-color: lightcoral;
+    padding: 20px;
+  }
+  
+  .two-col-grid .right {
+    background-color: lightblue;
+    padding: 20px;
+  }
+  .two-col-grid .third-grid {
+    background-color: rgb(30, 193, 32);
+    padding: 20px;
+  }
+  
+  /* Task 13: Dashboard Layout with Grid Areas */
+  .dashboard-grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main rightside"
+      "footer footer footer";
+    grid-template-columns: 200px 1fr 100px;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .dashboard-grid .header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .dashboard-grid .sidebar {
+    grid-area: sidebar;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .dashboard-grid .main {
+    grid-area: main;
+    background-color: #e0f7fa;
+    padding: 20px;
+  }
+  .dashboard-grid .rightside {
+    grid-area: rightside;
+    background-color: #10d4ee;
+    padding: 20px;
+  }
+  
+  .dashboard-grid .footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Task 14: Grid Item Spanning 2 Columns */
+  .span-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .span-grid .item {
+    background-color: #8bc34a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .span-grid .span {
+    grid-column: span 2;
+    background-color: #689f38;
+  }
+  
+  /* Task 15: Calendar Layout (7 Columns) */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .calendar-grid div {
+    padding: 10px;
+    background-color: #ffe082;
+    border: 1px solid #fdd835;
+  }
+
+  /* ---------- TRANSFORM TASKS ---------- */
+
+.transform-task {
+    margin: 30px 0;
+  }
+  
+  /* Task 16: Rotate button on hover */
+  .rotate-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 05s;
+  }
+  
+  .rotate-btn:hover {
+    transform: rotate(15deg);
+  }
+  
+  /* Task 17: Move box 100px right on click */
+  .move-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .move-box.move-box-right {
+    transform: translateX(100px);
+  }
+  
+  /* Task 18: Scale image on hover */
+  .scale-img {
+    transition: transform 0.3s;
+    width: 200px;
+    height: auto;
+  }
+  
+  .scale-img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Task 19: Skew heading */
+  .skew-heading {
+    transform: skewX(-15deg);
+    font-size: 32px;
+    color: #9c27b0;
+  }
+  
+  /* Task 20: Combined transform */
+  .cool-transform {
+    width: 150px;
+    height: 150px;
+    background-color: #1abc9c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 10s ease ;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cool-transform:hover {
+    transform: rotate(20deg) translateX(50px) scale(1.2) ;
+    border-radius: 20px;
+  }
+
+  /* ---------- TRANSITION TASKS ---------- */
+
+.transition-task {
+    margin: 30px 0;
+  }
+  
+  /* Task 21: Button transitions */
+  .transition-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .transition-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.1);
+  }
+  
+  /* Task 22: Smooth border radius */
+  .radius-box {
+    width: 100px;
+    height: 100px;
+    background-color: #e67e22;
+    transition: border-radius 0.4s;
+  }
+  
+  .radius-box:hover {
+    border-radius: 50%;
+  }
+  
+  /* Task 23: Image zoom */
+  .zoom-image {
+    transition: transform 1s;
+    display: block;
+    max-width: 200px;
+  }
+  
+  .zoom-image:hover {
+    transform: scale(1.2);
+  }
+  
+  /* ---------- TASK 24: Navbar Background Transition on Scroll ---------- */
+
+/* Task 24: Navbar Background Color Transition on Scroll */
+/* Task 24: Navbar Background Transition on Scroll */
+.navbar-scroll {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    z-index: 999;
+  }
+  .navbar-scroll.scrolled {
+    background-color: #3498db;
+    color: white;
+  }
+  .content-filler {
+    height: 1000px; /* to enable scrolling */
+  }
+  
+  
+
+  /* Task 25: Lift card on hover */
+.lift-card {
+    width: 250px;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #9be0e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .lift-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Task 26: Bouncing Ball Animation */
+.bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: bounce 1s infinite; /* Apply bounce animation */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(-100px); /* Halfway up */
+    }
+    100% {
+      transform: translateY(0); /* Return to initial position */
+    }
+  }
+
+  /* Task 27: Spinning Loader */
+.spinner {
+    border: 4px solid #f3f3f3; /* Light border */
+    border-top: 4px solid #3498db; /* Blue color for the top */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Spinning animation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Initial state */
+    }
+    100% {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
+
+  /* Task 28: Slide-in Animation */
+.slide-in-div {
+    width: 200px;
+    height: 100px;
+
+    background-color: #3498db;
+    position: relative;
+    animation: slideIn 2s ease-out infinite; /* Apply slide-in animation */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%); /* Start off-screen */
+    }
+    100% {
+      transform: translateX(0); /* End at normal position */
+    }
+  }
+/* Task 29: Pulsing Heart Animation */
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    animation: pulse 1.5s infinite; /* Apply pulsing animation */
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -50px;
+    left: 0;
+  }
+  
+  .heart::after {
+    left: 50px;
+    top: 0;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: rotate(-45deg) scale(1);
+    }
+    50% {
+      transform: rotate(-45deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(-45deg) scale(1);
+    }
+  }
+/* Task 30: Walking Emoji Animation */
+.walking-emoji {
+    font-size: 50px;
+    position: relative;
+    
+    animation: walk 10s steps(10) infinite; /* Apply walking animation */
+    animation-direction: reverse;
+  }
+  
+  @keyframes walk {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%; /* Move emoji across the screen */
+    }
+  }
+      
+  /* ============================= */
+/* Bonus Small Funny Projects (Tasks 31–35) */
+/* ============================= */
+
+/* Task 31: Dancing Box */
+.dancing-box {
+    width: 100px;
+    height: 100px;
+    background-color: #e67e22;
+    animation: dance 2s infinite linear;
+    margin: 20px auto;
+  }
+  @keyframes dance {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  /* Task 32: Flying UFO */
+  .ufo {
+    width: 80px;
+    height: 40px;
+    background: radial-gradient(circle at center, #bbb, #333);
+    border-radius: 50% / 60%;
+    position: relative;
+    animation: fly 6s linear infinite;
+    box-shadow: 0 0 20px #0ff;
+    margin: 30px auto;
+  }
+  @keyframes fly {
+    0% {
+      transform: translateX(-100px);
+    }
+    50% {
+      transform: translateX(50vw) translateY(20px);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+  
+  /* Task 33: Stretchy Button */
+  .stretch-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .stretch-btn:hover {
+    transform: scaleX(1.5);
+  }
+  
+  /* Task 34: Jumping Emoji */
+  .jumping-emoji {
+    font-size: 60px;
+    display: inline-block;
+    animation: jump 0.6s ease-in-out infinite;
+  }
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+  }
+  
+  /* Task 35: Popup Message Card */
+  .popup-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .popup-btn {
+    padding: 10px 15px;
+    background: #8e44ad;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .popup-card {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: #f39c12;
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  .popup-wrapper:hover .popup-card {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
