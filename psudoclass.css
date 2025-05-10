@@ -1,0 +1,85 @@
+/* a:link
+a:visited 
+a:hover 
+a:active */
+a:link{
+    color:#ff3
+}
+
+
+a:hover{
+    color: aqua;
+}
+a:active{
+    color: chartreuse;
+}
+/* a:visited{
+    color: red;
+} */
+
+p:first-line{
+    color: chocolate;
+    font-size: 20px;
+}
+
+p.para2::first-line{
+    color: crimson;
+}
+p.para2::first-letter{
+    font-size: 100px;
+    font-weight: 900;
+    line-height: normal;
+    color:rgb(17, 255, 164);
+    padding: 10px;
+    margin: 10px;
+    /* float: left; */
+}
+
+
+::marker{
+    color: red;
+    font-size: 20px;
+}
+
+::selection{
+    color: rgb(0, 255, 64);
+    background-color: darkgray;
+    
+}
+h1::before{
+    content:" ";
+
+    height: auto;
+    width: 40px;
+    border: 2px solid red;
+}
+h1::after{
+    content:" ";
+
+    height: auto;
+    width: 40px;
+    border: 2px solid rgb(0, 255, 55);
+}
+
+.card{
+    margin: 20px;
+    padding: 20px ;
+    width: 250px;
+    border: 1px solid black;
+    /* background-image: url(./images/image.jpg); */
+    /* object-fit: cover; */
+/* background-image: linear-gradient(180deg red green blue); */
+
+}
+.card img{
+    width: 250px;
+    height: auto;
+    
+}
+
+/* .card-img:before{
+    opacity: 0;
+}
+.card-img::after{
+    opacity: 1;
+} */
