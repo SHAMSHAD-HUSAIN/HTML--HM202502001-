@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing Product</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .hero {
+        /* background: url('https://media.istockphoto.com/id/1247567791/vector/shopping-online-with-realistic-modern-smartphone-virtual-realistic-geometry-gifts-shopping.jpg?s=612x612&w=0&k=20&c=vjZm-IU7z3K_qN4luKcFMje4YXlSsiy10ILusXYCoz4=') no-repeat center center; */
+  /* background-size: cover; */
+      background: linear-gradient(to left, rgb(10, 184, 120), #005,#ff9800);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero button {
+      background: #ff9800;
+      color: white;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.5s ease;
+    }
+
+    .hero> button:hover {
+      background: #00fb60;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+   
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Amazing Product</h1>
+    <p>Exclusive gadgets at unbeatable prices!</p>
+    <button>Order Now</button>
+  </div>
+
+  <div class="products">
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/685111998/photo/young-girl-dancing-to-the-music.jpg?s=612x612&w=0&k=20&c=XA8XG5Fyge1eR-69FeRbXwIj7mVgnhrTLDb9TJhxb24=" alt="Wireless Earbuds">
+      <h3>Wireless Earbuds</h3>
+      <p>Enjoy music with noise cancellation and all-day battery.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/579758614/photo/checking-pulse.jpg?s=612x612&w=0&k=20&c=WcV1O2Rtxvd-4_2UAwdAhl5LB4e1MZ-Ni-XcXgXvhtE=" alt="Smart Watch">
+      <h3>Smart Watch</h3>
+      <p>Track fitness, calls, and notifications with one device.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1480281331/photo/young-black-female-working-on-laptop-computer-in-creative-office-in-the-evening-happy.jpg?s=612x612&w=0&k=20&c=ErKZx9jH5hVXRhXOe6ziaj9bK6Q3Jx-ZADzDk8d0jYM=" alt="Laptop Stand">
+      <h3>Ergonomic Laptop Stand</h3>
+      <p>Improve posture and airflow with this premium stand.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/862274326/photo/high-power-loud-speakers.jpg?s=612x612&w=0&k=20&c=8nRvSLKNuL-eMaT6fCl_DwhYRTN7LSwda-8rfROFsts=" alt="Bluetooth Speaker">
+      <h3>Bluetooth Speaker</h3>
+      <p>Deep bass and portable design. Party anywhere, anytime!</p>
+    </div>
+  </div>
+
+</body>
+</html>

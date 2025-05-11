@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Grid Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #1e1e2f;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .green {
+      color: #32cd32;
+    }
+
+    .grid {
+      display: grid;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      height: 80vh;
+      gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 40px 2fr 1fr 1fr 40px;
+      grid-template-areas:
+        "header menu menu menu"
+        "hero hero hero hero"
+        "main main image image"
+        "main main extra extra"
+        "banner banner banner banner";
+    }
+
+    .grid > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      /* border-radius: 6px; */
+    }
+
+    .header { grid-area: header; background: lightgreen; }
+    .menu   { grid-area: menu; background: red; }
+    .hero   { grid-area: hero; background: dodgerblue; }
+    .main   { grid-area: main; background: violet; }
+    .image  { grid-area: image; background: hotpink; }
+    .extra  { grid-area: extra; background: gold; }
+    .banner { grid-area: banner; background: orange; }
+
+    @media (max-width: 850px) {
+      .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "header header header header"
+          "hero hero hero hero"
+          "menu main main main"
+          "menu main main main"
+          "menu banner banner banner"
+          "menu extra extra image ";
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1><span>Responsive</span> <span class="green">Grid</span> Layout</h1>
+  <div class="grid">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="hero">Hero</div>
+    <div class="main">Main</div>
+    <div class="image">Image</div>
+    <div class="extra">Extra</div>
+    <div class="banner">Banner</div>
+  </div>
+</body>
+</html>
